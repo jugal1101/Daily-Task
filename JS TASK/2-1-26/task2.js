@@ -6,29 +6,25 @@
 
 
 let user = {
-    data : "user details",
-    name : "Jack",
-    age : "20",
+  name: "Jack",
+  age: "20",
 
-    userdata(){
-        document.writeln(this.name + "<br>")
-    }
-}
+  userdata() {
+    console.log(this.name);
+  },
+};
 user.userdata();
 
+let dryfruits = ["almond", "anjeer", "cashew"];
+let pomefruit = ["Apple", "kiwi", "peach", "pineapple"];
 
-let dryfruits = ["almond", "anjeer","cashew"];
-let pomefruit = ["Apple","kiwi","peach","pineapple"]
+let winterspecial = [...dryfruits, ...pomefruit];
+console.log(winterspecial);
 
-let  winterspecial = [...dryfruits , ...pomefruit]
-console.log(winterspecial)
-document.writeln("[",winterspecial ,"]")
-
-
-function data(...a){
-    console.log(a)
+function data(...a) {
+  console.log(a);
 }
 
-data ("how are you",()=>{
-data()
-})
+data("how are you", () => {
+  data();
+});
