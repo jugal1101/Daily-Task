@@ -21,10 +21,11 @@ let pomefruit = ["Apple", "kiwi", "peach", "pineapple"];
 let winterspecial = [...dryfruits, ...pomefruit];
 console.log(winterspecial);
 
-function data(...a) {
-  console.log(a);
+function data(callback){
+ callback()
+} 
+let myCallBack = () => {
+console.log("hello")
 }
 
-data("how are you", () => {
-  data();
-});
+data(myCallBack)
