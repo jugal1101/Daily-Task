@@ -26,3 +26,11 @@ console.log(studentDetails);
 // find() → student who scored more than 60
 const topper = students.find(stud => stud.marks > 60);
 console.log(topper);
+
+
+let final = (mark , bouns = 5)=>{
+ console.log("bounce marks =>"+ (mark + bouns))  
+
+}
+
+final(topper.marks)
