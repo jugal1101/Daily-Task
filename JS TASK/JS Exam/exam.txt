@@ -1,0 +1,352 @@
+1. What will be the output of this code?
+
+console.log(typeof null); console.log(typeof undefined); console.log(typeof []);
+
+· a) "null", "undefined", "array"
+
+· b) "object", "undefined", "object"  // ANS
+
+· c) "null", "undefined", "object" 
+
+· d) "object", "object", "array" 
+
+2. What is the result of [] + {} + [] in JavaScript?
+
+· a) "[object Object]"
+
+· b) "0[object Object]"
+
+· c) Error    
+
+· d) undefined    // ANS
+
+3. Which statement about hoisting is correct?
+
+· a) Only var declarations are hoisted
+
+· b) let and const are hoisted but not initialized
+
+· c) Function expressions are hoisted before function declarations
+
+· d) Hoisting only applies to global scope // ANS
+
+
+
+
+
+4. What will this code output?
+
+for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); }
+
+· a) 0, 1, 2    // ANS
+
+· b) 3, 3, 3
+
+· c) undefined, undefined, undefined
+
+· d) Error
+
+5. What is the difference between call(), apply(), and bind()?
+
+· a) No difference, they're aliases
+
+· b) call() and apply() invoke immediately, bind() returns a new function // ANS
+
+· c) bind() is faster than the others
+
+· d) They only work with arrow functions
+
+6. What will this code return?
+
+const obj = { a: 1, b: 2, c: 3 }; const { a, ...rest } = obj; console.log(rest);
+
+· a) {a: 1}
+
+· b) {b: 2, c: 3}.   // ANS
+
+· c) {a: 1, b: 2, c: 3}
+
+· d) Error. 
+
+7. Which array method does NOT mutate the original array?
+
+· a) push()
+
+· b) sort()
+
+· c) map()  // ANS
+
+· d) splice()
+
+8. What is the output of this code?
+
+console.log(1 + +"2" + 3);
+
+· a) "123"
+
+· b) 6
+
+· c) "1+23"
+
+· d) Error  // ANS
+
+9. What does "use strict" do in JavaScript?
+
+· a) Makes code run faster
+
+· b) Enables ES6 features 
+
+· c) Enforces stricter parsing and error handling. // ANS
+
+· d) Optimizes memory usage
+
+
+10. What will this promise chain output?
+
+Promise.resolve(1) .then(x => x + 1) .then(x => { throw new Error('Failed') }) .catch(err => 1) .then(x => x + 1) .then(x => console.log(x));
+
+· a) Error message. // ANS
+
+· b) 2
+
+· c) 1
+
+· d) undefined
+
+11. What is the difference between == and ===?
+
+· a) No practical difference
+
+· b) === checks type and value, == performs type coercion. // ANS
+
+· c) == is deprecated
+
+· d) === is slower
+
+12. What will this code output?
+
+const arr = [1, 2, 3]; arr[10] = 99; console.log(arr.length);
+
+· a) 4    // ANS
+
+· b) 10
+
+· c) 11
+
+· d) undefined
+
+13. Which is true about arrow functions?
+
+· a) They have their own this binding.    // ANS
+
+· b) They can be used as constructors
+
+· c) They inherit this from enclosing scope
+
+· d) They are hoisted like regular functions
+
+14. What does JSON.stringify() do with functions?
+
+· a) Converts them to strings     // ANS
+
+· b) Ignores them
+
+· c) Throws an error
+
+· d) Converts them to null
+
+
+
+
+15. What is the result of 0.1 + 0.2 === 0.3?
+
+· a) true.    // ANS
+
+· b) false
+
+· c) Error
+
+· d) undefined
+
+Section 2: Advanced Concepts (15 Questions)
+
+16. What is a closure in JavaScript?
+
+· a) A way to hide variables.    // ANS
+
+· b) A function with access to outer scope variables
+
+· c) A method of object creation
+
+· d) A type of loop
+
+17. What will this code output?
+
+function outer() { var x = 1; function inner() { console.log(x); } x = 2; return inner; } outer()();
+
+· a) 1
+
+· b) 2
+
+· c) undefined
+
+· d) Error. // ANS
+
+18. What is the purpose of async/await?
+
+· a) To make code run faster
+
+· b) To handle asynchronous operations more readably       // ANS
+
+· c) To create new threads
+
+· d) To optimize memory usage
+
+
+
+
+
+
+
+
+
+
+19. What will this code output?
+
+const obj = { name: "John", getName: function() { return this.name; } }; const getName = obj.getName; console.log(getName());
+
+· a) "John".   // ANS
+
+· b) undefined
+
+· c) Error
+
+· d) null
+
+20. What is event delegation in JavaScript?
+
+· a) Assigning events to multiple elements    // ANS
+
+· b) Using a parent element to handle events for children
+
+· c) Removing event listeners
+
+· d) Creating custom events
+
+21. What is the difference between setTimeout and setInterval?
+
+· a) No difference
+
+· b) setTimeout runs once, setInterval runs repeatedly    // ANS
+
+· c) setInterval is deprecated
+
+· d) setTimeout is synchronous
+
+22. What will this destructuring assignment do?
+
+const [a, b, ...rest] = [1, 2, 3, 4, 5]; console.log(rest);
+
+· a) [1, 2]
+
+· b) [3, 4, 5].    // ANS
+
+· c) [4, 5]
+
+· d) Error
+
+23. What does the reduce() method do?
+
+· a) Removes elements from an array   // ANS
+
+· b) Reduces array size     
+
+· c) Applies a function to accumulate array values into a single result
+
+· d) Sorts array elements
+
+
+
+
+
+24. What is the output of this code?
+
+console.log(typeof NaN); console.log(NaN === NaN);
+
+· a) "number", true
+
+· b) "number", false
+
+· c) "NaN", false
+
+· d) "undefined", true.   // ANS
+
+25. What is prototypal inheritance?
+
+· a) Copying properties from one object to another 
+
+· b) Objects inheriting from other objects through prototype chain.   // ANS
+
+· c) Class-based inheritance like Java
+
+· d) A deprecated feature
+
+26. What will this code output?
+
+const promise = new Promise((resolve, reject) => { console.log("Promise created"); resolve("Success"); }); console.log("After promise");
+
+· a) "After promise", "Promise created".  // ANS
+
+· b) "Promise created", "After promise"
+
+· c) "Success", "Promise created"
+
+· d) Error
+
+27. What is the difference between null and undefined?
+
+· a) No difference
+
+· b) null is assigned, undefined is default for uninitialized.  // ANS
+ 
+· c) undefined is an object, null is primitive
+
+· d) null is deprecated
+
+28. What does Object.freeze() do?
+
+· a) Prevents object modification
+
+· b) Converts object to string
+
+· c) Clones the object.   // ANS
+
+· d) Deletes the object
+
+
+
+
+
+
+
+29. What will this code output?
+
+const arr = [1, 2, 3]; const newArr = arr.map(x => x * 2); console.log(arr); console.log(newArr);
+
+· a) [2, 4, 6], [2, 4, 6].   // ANS
+
+· b) [1, 2, 3], [2, 4, 6]
+
+· c) [2, 4, 6], [1, 2, 3]
+
+· d) Error
+
+30. What is the purpose of the spread operator (...)?
+
+· a) To create arrays
+
+· b) To expand iterables into individual elements.    // ANS
+
+· c) To declare variables
+
+· d) To create functions
