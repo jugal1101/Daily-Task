@@ -67,3 +67,6 @@
 
 //   return true; 
 // }
+
+
+console.log(typeof undefined)

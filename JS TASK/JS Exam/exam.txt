@@ -12,23 +12,23 @@ console.log(typeof null); console.log(typeof undefined); console.log(typeof []);
 
 2. What is the result of [] + {} + [] in JavaScript?
 
-· a) "[object Object]"
+· a) "[object Object]" // ANS
 
 · b) "0[object Object]"
 
 · c) Error    
 
-· d) undefined    // ANS
+· d) undefined    
 
 3. Which statement about hoisting is correct?
 
 · a) Only var declarations are hoisted
 
-· b) let and const are hoisted but not initialized
+· b) let and const are hoisted but not initialized. // ANS
 
 · c) Function expressions are hoisted before function declarations
 
-· d) Hoisting only applies to global scope // ANS
+· d) Hoisting only applies to global scope 
 
 
 
@@ -38,9 +38,9 @@ console.log(typeof null); console.log(typeof undefined); console.log(typeof []);
 
 for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); }
 
-· a) 0, 1, 2    // ANS
+· a) 0, 1, 2    
 
-· b) 3, 3, 3
+· b) 3, 3, 3. // ANS
 
 · c) undefined, undefined, undefined
 
@@ -84,11 +84,11 @@ console.log(1 + +"2" + 3);
 
 · a) "123"
 
-· b) 6
+· b) 6.    // ANS
 
 · c) "1+23"
 
-· d) Error  // ANS
+· d) Error 
 
 9. What does "use strict" do in JavaScript?
 
@@ -105,13 +105,13 @@ console.log(1 + +"2" + 3);
 
 Promise.resolve(1) .then(x => x + 1) .then(x => { throw new Error('Failed') }) .catch(err => 1) .then(x => x + 1) .then(x => console.log(x));
 
-· a) Error message. // ANS
+· a) Error message. 
 
 · b) 2
 
 · c) 1
 
-· d) undefined
+· d) undefined   // ANS
 
 11. What is the difference between == and ===?
 
@@ -127,21 +127,21 @@ Promise.resolve(1) .then(x => x + 1) .then(x => { throw new Error('Failed') }) .
 
 const arr = [1, 2, 3]; arr[10] = 99; console.log(arr.length);
 
-· a) 4    // ANS
+· a) 4   
 
 · b) 10
 
-· c) 11
+· c) 11.  // ANS
 
 · d) undefined
 
 13. Which is true about arrow functions?
 
-· a) They have their own this binding.    // ANS
+· a) They have their own this binding
 
 · b) They can be used as constructors
 
-· c) They inherit this from enclosing scope
+· c) They inherit this from enclosing scope.   // ANS
 
 · d) They are hoisted like regular functions
 
@@ -160,9 +160,9 @@ const arr = [1, 2, 3]; arr[10] = 99; console.log(arr.length);
 
 15. What is the result of 0.1 + 0.2 === 0.3?
 
-· a) true.    // ANS
+· a) true.   
 
-· b) false
+· b) false.   // ANS
 
 · c) Error
 
@@ -172,9 +172,9 @@ Section 2: Advanced Concepts (15 Questions)
 
 16. What is a closure in JavaScript?
 
-· a) A way to hide variables.    // ANS
+· a) A way to hide variables.   
 
-· b) A function with access to outer scope variables
+· b) A function with access to outer scope variables    // ANS
 
 · c) A method of object creation
 
@@ -257,11 +257,11 @@ const [a, b, ...rest] = [1, 2, 3, 4, 5]; console.log(rest);
 
 23. What does the reduce() method do?
 
-· a) Removes elements from an array   // ANS
+· a) Removes elements from an array   
 
 · b) Reduces array size     
 
-· c) Applies a function to accumulate array values into a single result
+· c) Applies a function to accumulate array values into a single result    // ANS
 
 · d) Sorts array elements
 
@@ -275,11 +275,11 @@ console.log(typeof NaN); console.log(NaN === NaN);
 
 · a) "number", true
 
-· b) "number", false
+· b) "number", false.    // ANS
 
 · c) "NaN", false
 
-· d) "undefined", true.   // ANS
+· d) "undefined", true.   
 
 25. What is prototypal inheritance?
 
@@ -295,9 +295,9 @@ console.log(typeof NaN); console.log(NaN === NaN);
 
 const promise = new Promise((resolve, reject) => { console.log("Promise created"); resolve("Success"); }); console.log("After promise");
 
-· a) "After promise", "Promise created".  // ANS
+· a) "After promise", "Promise created". 
 
-· b) "Promise created", "After promise"
+· b) "Promise created", "After promise".   // ANS
 
 · c) "Success", "Promise created"
 
@@ -315,11 +315,11 @@ const promise = new Promise((resolve, reject) => { console.log("Promise created"
 
 28. What does Object.freeze() do?
 
-· a) Prevents object modification
+· a) Prevents object modification.   // ANS
 
 · b) Converts object to string
 
-· c) Clones the object.   // ANS
+· c) Clones the object.   
 
 · d) Deletes the object
 
@@ -333,9 +333,9 @@ const promise = new Promise((resolve, reject) => { console.log("Promise created"
 
 const arr = [1, 2, 3]; const newArr = arr.map(x => x * 2); console.log(arr); console.log(newArr);
 
-· a) [2, 4, 6], [2, 4, 6].   // ANS
+· a) [2, 4, 6], [2, 4, 6].  
 
-· b) [1, 2, 3], [2, 4, 6]
+· b) [1, 2, 3], [2, 4, 6]    // ANS
 
 · c) [2, 4, 6], [1, 2, 3]
 
